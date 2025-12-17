@@ -1,0 +1,62 @@
+/* 🎅 SNOOPY */
+.snoopy-natal {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 50px auto;
+
+    animation: flutuar 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.25));
+
+    transition: transform 0.35s ease;
+    will-change: transform;
+}
+
+/* efeito ao passar o mouse (desktop) */
+@media (hover: hover) {
+    .snoopy-natal:hover {
+        transform: translateY(-6px) scale(1.12);
+    }
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 576px) {
+    .snoopy-natal {
+        width: 120px;
+        margin-bottom: 30px;
+    }
+}
+
+/* 🎁 BOTÃO RETROSPECTIVA */
+.botao-retro {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-size: 1.15em;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #ff4d6d, #ff758f);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+/* hover só desktop */
+@media (hover: hover) {
+    .botao-retro:hover {
+        transform: scale(1.12);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    }
+}
+
+/* clique */
+.botao-retro:active {
+    transform: scale(0.97);
+}
